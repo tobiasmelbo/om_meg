@@ -1,0 +1,121 @@
+:root {
+    --background-color: #121212;
+    --color: white;
+    --element-background: #121212a8;
+    --highlight-color: #3d3d3d62;
+    --footer-color: #999;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body.light-mode {
+    background-image: none;
+    --background-color: white;
+    --element-background: #ffffff00;
+    --color: #121212;
+    --highlight-color: #dbdbdb;
+}
+
+.toggle-button {
+    color: var(--color);
+    font-size: 1.4rem;
+    position: fixed;
+    top: 1rem;
+    left: calc(100% - 2.8rem);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.section {
+    color: var(--color);
+    background-color: var(--element-background);
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    width: 33%;
+    text-decoration: none;
+}
+
+.section p {
+    font-size: 0.9rem;
+}
+
+a {
+    color: var(--color);
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+}
+
+#hemmelig-knapp {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .section {
+        width: 66%;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 315px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+/* For latex-logoen */
+
+.tex sub, .latex sub, .latex sup {
+    text-transform: uppercase;
+}
+
+.tex sub, .latex sub {
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+}
+
+.tex, .latex, .tex sub, .latex sub {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.latex sup {
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+}
