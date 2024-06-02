@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.1s;
 }
 
 body.light-mode {
@@ -45,12 +46,12 @@ body.light-mode {
 
 .section {
     color: var(--color);
-    background-color: var(--element-background);
     flex: 1;
     margin: 1rem;
     padding: 2rem;
     width: 33%;
     text-decoration: none;
+    transition: color 0.1s;
 }
 
 .section p {
