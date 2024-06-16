@@ -7,12 +7,7 @@
 }
 
 html {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-h1 {
-    font-weight: bold;
-    font-style: italic;
+    font-family: Georgia, serif;
 }
 
 body {
@@ -55,7 +50,18 @@ body.light-mode {
 }
 
 .section p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+.section h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.section li {
+    margin: 0.5rem;
 }
 
 a {

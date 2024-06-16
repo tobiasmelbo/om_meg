@@ -15,6 +15,22 @@ $(document).ready(function() {
             console.log("Feil ved henting av spilldata.")
         }
     })
+
+    /* Henter oppgaver løst fra leetcode*/
+    $.ajax({
+        url: "https://leetcode-stats-api.herokuapp.com/tobiasmelbo",
+        dataType: "text",
+        success: function(data){
+            data = JSON.parse(data)
+            $("#leet_total").text(data["totalSolved"])
+            $("#leet_easy").text(data["easySolved"])
+            $("#leet_medium").text(data["mediumSolved"])
+            $("#leet_hard").text(data["hardSolved"])
+        },
+        error: function(){
+            console.log("Feil ved henting av LeetCode-data.")
+        }
+    })
 })
 
 function toggle_theme() {
