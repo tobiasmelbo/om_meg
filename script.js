@@ -10,7 +10,6 @@ $(document).ready(function() {
         dataType: "text",
         success: function(data){
             incrementer($("#antall_spill").text(), "#antall_spill", data.split("\n").length)
-            $("#antall_spill").text(data.split("\n").length)
         },
         error: function(){
             console.log("Feil ved henting av spilldata.")
@@ -23,11 +22,6 @@ $(document).ready(function() {
         dataType: "text",
         success: function(data){
             data = JSON.parse(data)
-            /* 
-            while (parseInt($("#leet_total").text()) < data["totalSolved"]) {
-                $("#leet_total").text(parseInt($("#leet_total").text()) + 1)
-            }
-            */
             incrementer(parseInt($("#leet_total").text()),"#leet_total", data["totalSolved"])
             incrementer(parseInt($("#leet_easy").text()), "#leet_easy", data["easySolved"])
             incrementer(parseInt($("#leet_medium").text()), "#leet_medium", data["mediumSolved"])
@@ -39,16 +33,14 @@ $(document).ready(function() {
     })
 })
 
-function incrementer(value, div_name, target_value, delay) {
+function incrementer(value, div_name, target_value) {
     // Tar navnet til en div som holder et tall og en verdi. Verdien til div inkrementeres så helt til den når target_value med en liten delay.
 
     value++
     if (value < target_value) {
         $(div_name).text(value + 1)
         setTimeout(incrementer, 100*value/target_value, value, div_name, target_value)
-    } else {
-        console.log("Done")
-    }
+    } 
 }
 
 function toggle_theme() {
