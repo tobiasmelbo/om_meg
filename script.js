@@ -22,10 +22,15 @@ $(document).ready(function() {
         dataType: "text",
         success: function(data){
             data = JSON.parse(data)
+            console.log(data)
             incrementer(parseInt($("#leet_total").text()),"#leet_total", data["totalSolved"])
+
             incrementer(parseInt($("#leet_easy").text()), "#leet_easy", data["easySolved"])
+
             incrementer(parseInt($("#leet_medium").text()), "#leet_medium", data["mediumSolved"])
+
             incrementer(parseInt($("#leet_hard").text()), "#leet_hard", data["hardSolved"])
+
         },
         error: function(){
             console.log("Feil ved henting av LeetCode-data.")
@@ -40,7 +45,9 @@ function incrementer(value, div_name, target_value) {
     if (value < target_value) {
         $(div_name).text(value + 1)
         setTimeout(incrementer, 100*value/target_value, value, div_name, target_value)
-    } 
+    } else if (value === target_value) {
+        $(div_name).text(value)
+    }
 }
 
 function toggle_theme() {
