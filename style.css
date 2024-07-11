@@ -42,7 +42,7 @@ body.light-mode {
 .section {
     color: var(--color);
     flex: 1;
-    margin: 1rem;
+    margin: 18rem;
     padding: 2rem;
     width: 33%;
     text-decoration: none;
@@ -50,13 +50,13 @@ body.light-mode {
 }
 
 .section p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .section h1 {
     font-weight: bold;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 100;
 }
 
