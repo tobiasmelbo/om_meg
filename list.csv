@@ -1,3 +1,4 @@
+Rating,Title,Console,Time(Optional)
 1,Life is Strange,PC,11h4m8s
 4,Super Metroid,SNES,5h49m
 2,Felix the Cat,NES,1h14m1s
@@ -33,7 +34,7 @@
 2,The Simpsons: Hit & Run,GCN,8h3m57s
 2,Shadow Bug,PC,2h23m42s
 5,Shovel Knight,PC,
-5,Cuphead,PC,8h49m8s,
+5,Cuphead,PC,8h49m8s
 1,The Incredible Adventures of Van Helsing,PC,16h42m
 3,Far Cry 3: Blood Dragon,PC,2h40m7s
 4,Castlevania: Aria of Sorrow,GBA,6h36m37s
@@ -43,10 +44,9 @@
 4,Beyond Good & Evil,PC,8h38m36s
 3,Rayman Origins,PC,6h15m45s
 4,The Punisher,PC,6h52m46s
-5,Bloodborne,PS4,16h54m19s,
+5,Bloodborne,PS4,16h54m19s
 3,"Bioshock 2 ""Remastered""",PC,5h27m55s
 5,BUTCHER,PC,
-3,Rogue Legacy,PC,20h48m
 2,Serious Sam: The First Encounter,PC,7h
 4,Grand Theft Auto V ,X360,
 4,Titan Souls,PC,2h
@@ -315,7 +315,7 @@
 3,Mega Man 2,NES,
 3,Doom 3,PC,7h10m41s
 3,Castlevania: Dracula X,SNES,
-4,Celeste,PC,6h1m7s,
+4,Celeste,PC,6h1m7s
 3,Earth Defense Force: Insect Armageddon,PC,4h35m29s
 1,Super Troll Islands,SNES,
 1,Dropsy,PC,3h24m22s
@@ -489,7 +489,6 @@
 4,A Short Hike,PC,45m
 4,Spore,PC,11h
 3,Dragons Dogma II,PC,23h
-4,Warhammer 40k: Rogue Trader,PC,64h15m
-3,Terraria,PC,28h
-3,Need for Speed: Underground 2,PS2,
-4,Rogue Legacy 2,PC,20h
+3,Moonlighter,PC,10h13m
+3,Fallout: London,PC,41h
+3,LumbearJack,PC,1h8m
