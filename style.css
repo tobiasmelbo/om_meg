@@ -20,6 +20,14 @@ body {
     transition: background-color 0.1s;
 }
 
+body #animasjon_hvit{
+    display: inline;
+}
+
+body #animasjon_sort{
+    display: none;
+}
+
 body.light-mode {
     background-image: none;
     --background-color: white;
@@ -27,6 +35,15 @@ body.light-mode {
     --color: #121212;
     --highlight-color: #dbdbdb;
 }
+
+body.light-mode #animasjon_sort{
+    display: inline;
+}
+
+body.light-mode #animasjon_hvit{
+    display: none;
+}
+
 
 .toggle-button {
     color: var(--color);
@@ -42,7 +59,7 @@ body.light-mode {
 .section {
     color: var(--color);
     flex: 1;
-    margin: 18rem;
+    margin: 14rem;
     padding: 2rem;
     width: 33%;
     text-decoration: none;
@@ -64,6 +81,11 @@ body.light-mode {
     margin: 0.5rem;
 }
 
+.section img{
+    width: 100%;
+    height: auto;
+}
+
 a {
     color: var(--color);
 }
@@ -79,7 +101,7 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .section {
         width: 66%;
     }
@@ -104,6 +126,7 @@ footer {
 }
 
 /* For latex-logoen */
+/* Takket være Sinan Ünür i dette svaret på StackOverflow: https://stackoverflow.com/questions/8160514/is-there-css-for-typesetting-the-latex-logo-in-html */
 
 .tex sub, .latex sub, .latex sup {
     text-transform: uppercase;

@@ -9,7 +9,7 @@ $(document).ready(function() {
         url: "https://raw.githubusercontent.com/tobiasmelbo/om_meg/main/list.csv",
         dataType: "text",
         success: function(data){
-            incrementer($("#antall_spill").text(), "#antall_spill", data.split("\n").length)
+            incrementer($("#antall_spill").text(), "#antall_spill", data.split("\n").length - 1)
         },
         error: function(){
             console.log("Feil ved henting av spilldata.")
