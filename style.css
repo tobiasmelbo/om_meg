@@ -1,9 +1,9 @@
 :root {
-    --background-color: #121212;
-    --color: white;
-    --element-background: #121212a8;
-    --highlight-color: #3d3d3d62;
-    --footer-color: #999;
+    --background-color: #1e1e2e;
+    --color: #cdd6f4;
+    --element-background: #1e1e2ea8;
+    --highlight-color: #313244;
+    --footer-color: #bac2de;
 }
 
 html {
@@ -30,10 +30,10 @@ body #animasjon_sort{
 
 body.light-mode {
     background-image: none;
-    --background-color: white;
+    --background-color: #eff1f5;
     --element-background: #ffffff00;
-    --color: #121212;
-    --highlight-color: #dbdbdb;
+    --color: #4c4f69;
+    --highlight-color: #ccd0da;
 }
 
 body.light-mode #animasjon_sort{
