@@ -1,7 +1,7 @@
 :root {
-    --background-color: #11111b;
+    --background-color: #1e1e2e;
     --color: #cdd6f4;
-    --element-background: #1e1e2ea8;
+    --element-background: #6c7086	;
     --highlight-color: #313244;
     --footer-color: #bac2de;
 }
@@ -30,7 +30,7 @@ body #animasjon_sort{
 
 body.light-mode {
     background-image: none;
-    --background-color: #dce0e8;
+    --background-color: #eff1f5;
     --element-background: #ffffff00;
     --color: #4c4f69;
     --highlight-color: #ccd0da;
