@@ -110,11 +110,17 @@ a {
     color: var(--color);
 }
 
+footer a {
+    color: var(--footer-color);
+}
+
+
 footer {
+    margin-top: 5%;
     padding: 1em;
     text-align: center;
     font-size: 1rem;
-    color: #999;
+    color: var(--footer-color);
 }
 
 #hemmelig-knapp {
