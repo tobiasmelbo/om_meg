@@ -25,11 +25,13 @@ $(document).ready(function() {
             console.log(data)
             incrementer(parseInt($("#leet_total").text()),"#leet_total", data["totalSolved"])
 
+            /*
             incrementer(parseInt($("#leet_easy").text()), "#leet_easy", data["easySolved"])
 
             incrementer(parseInt($("#leet_medium").text()), "#leet_medium", data["mediumSolved"])
 
             incrementer(parseInt($("#leet_hard").text()), "#leet_hard", data["hardSolved"])
+            */
 
         },
         error: function(){
